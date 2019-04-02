@@ -1,12 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule} from "@angular/common/http";
+import { FormsModule} from "@angular/forms"
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 //import { UserdisplayComponent } from "./userdisplay/UserdisplayComponent";
 import { ResultdisplayComponent } from './resultdisplay/resultdisplay.component';
-import {UserRequestService} from './user-request.service'
+import {UserRequestService} from './user-request.service';
+import { UserdisplayComponent } from './userdisplay/userdisplay.component'
+
 
 
 @NgModule({
@@ -14,11 +18,14 @@ import {UserRequestService} from './user-request.service'
     AppComponent,
     SearchbarComponent,
     //UserdisplayComponent,
-    ResultdisplayComponent
+    ResultdisplayComponent,
+    UserdisplayComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [UserRequestService],
   bootstrap: [AppComponent]
