@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input  } from '@angular/core';
+import {UserRequestService} from '../user-request.service';
+import {User} from '../user'
 
 @Component({
   selector: 'app-userdisplay',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./userdisplay.component.css']
 })
 export class UserdisplayComponent implements OnInit {
+  @Input() userme:JSON
+  user:User;
+  constructor(private userrequestservice:UserRequestService) {
 
-  constructor() { }
+   }
 
   ngOnInit() {
+  this.user =new User(this.userme)
   }
 
 }

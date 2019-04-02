@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
-import { UserdisplayComponent } from './userdisplay/userdisplay.component';
+//import { UserdisplayComponent } from "./userdisplay/UserdisplayComponent";
 import { ResultdisplayComponent } from './resultdisplay/resultdisplay.component';
 import {UserRequestService} from './user-request.service'
 
@@ -13,7 +13,7 @@ import {UserRequestService} from './user-request.service'
   declarations: [
     AppComponent,
     SearchbarComponent,
-    UserdisplayComponent,
+    //UserdisplayComponent,
     ResultdisplayComponent
   ],
   imports: [
@@ -24,3 +24,4 @@ import {UserRequestService} from './user-request.service'
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+ 
