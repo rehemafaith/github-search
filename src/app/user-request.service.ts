@@ -39,7 +39,7 @@ export class UserRequestService {
    reposLink(reposearch){
 
     
-        return this.http.get<JSON[]>(`https://api.github.com/repositories/`+reposearch)
+        return this.http.get<JSON[]>(`https://api.github.com/repos/`+reposearch)
             
           
           
