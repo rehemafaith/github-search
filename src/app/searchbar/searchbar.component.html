@@ -1,21 +1,32 @@
 
-  
-    <div class="md-form my-0">
+  <form classs="form-inline my-2 my-lg-0 ml-auto">
+    <!-- <div class="md-form my-0"> -->
       <input [(ngModel)]="inputsearch" name="inputsearch" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-    </div>
-    <button (click)=search() class="btn btn-outline-success btn-md my-2 my-sm-0 ml-3" type="submit" >Search</button>
+    <!-- </div> -->
+    <button (click)=search() class="btn btn-outline-success btn-md my-2 my-sm-0 ml-3" type="submit" >Search User</button>
 
-
+  </form>
 
 <br>
  
+
+<h1><i>{{users.name}}</i> </h1>
+<h2>{{users.name}}</h2>
+<img src="{{users.avatar_url}}" alt="">
+<h3>followers:{{users.followers}}</h3>
+<h3>following:{{users.following}}</h3>
+<h4>Repositories:</h4>
+<ul>
+  <button><a href="{{users.html_url}}">View Repos</a></button>
+</ul>
+
 
 
 
 
   <form class="form-inline my-2 my-lg-0 ml-auto">
-    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
+    <input [(ngModel)]="research" name="reposearch" class="form-control" type="search" placeholder="Search" aria-label="Search">
+    <button (click)=searchRepo() class="btn btn-outline-success btn-md my-2 my-sm-0 ml-3" type="submit">Search Repositories</button>
   </form>
 
 

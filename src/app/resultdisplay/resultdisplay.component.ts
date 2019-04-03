@@ -8,23 +8,23 @@ import {UserRequestService} from '../user-request.service'
   styleUrls: ['./resultdisplay.component.css']
 })
 export class ResultdisplayComponent implements OnInit {
-  inputsearch=''
-  outputresult=[]
-  users:any=[]
+  // inputsearch=''
+  // outputresult=[]
+  // users:any=[]
   
   
   constructor(private userrequestservice:UserRequestService) { }
   
-   search(inputsearch:string){
-    let promise= new Promise((resolve,reject)=> {
-             this.userrequestservice.userInfo(this.inputsearch).toPromise().then((data)=>{
-               this.outputresult=data['items'];
-              this.users=data;
-               console.log(data)
-             })
-           }
-             )
-           }
+  //  search(inputsearch:string){
+  //   let promise= new Promise((resolve,reject)=> {
+  //            this.userrequestservice.userInfo(this.inputsearch).toPromise().then((data)=>{
+  //              this.outputresult=data['items'];
+  //             this.users=data;
+  //              console.log(data)
+  //            })
+  //          }
+  //            )
+  //          }
    
   ngOnInit() {
   }

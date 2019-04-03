@@ -10,22 +10,35 @@ import {UserRequestService} from '../user-request.service'
 })
 export class SearchbarComponent implements OnInit {
     
-  // inputsearch=''
-  // outputresult=[]
-  // users:any=[]
+  inputsearch=''
+  outputresult=[]
+  users:any=[]
+  reposearch=''
+  outputRepoSearch=[]
+  repos:any=[]
   constructor(private userrequestservice:UserRequestService) {}
     
     
-    // search(inputsearch:string){
-    //   let promise= new Promise((resolve,reject)=> {
-    //   this.userrequestservice.userInfo(this.inputsearch).toPromise().then((data)=>{
-    //     this.outputresult=data['items'];
-    //     this.users=data;
-    //     console.log(data)
-    //   })
-    // }
-    //   )
-    // }
+    search(inputsearch:string){
+      let promise= new Promise((resolve,reject)=> {
+      this.userrequestservice.userInfo(this.inputsearch).toPromise().then((data)=>{
+        this.outputresult=data['items'];
+        this.users=data;
+        console.log(data)
+      })
+    }
+      )
+    }
+    searchRepo(reposearch:string){
+      let promise= new Promise((resolve,reject)=> {
+      this.userrequestservice.reposLink(this.reposearch).toPromise().then((data)=>{
+        this.outputRepoSearch=data['items'];
+        this.repos=data;
+        console.log(data)
+      })
+    }
+      )
+    }
    
 
   ngOnInit() {

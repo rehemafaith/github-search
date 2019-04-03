@@ -36,19 +36,19 @@ export class UserRequestService {
   //     );
   //   });
   // }
-   reposLink(repos){
+   reposLink(reposearch){
 
-    return new Promise((resolve,reject)=> {
-        this.http.get<JSON[]>(`${repos}?access_token=${this.apikey}`).toPromise().then(response => {
-            console.log(response)
-            resolve()
-          }, error => {
-            reject(error)
+    
+        return this.http.get<JSON[]>(`https://api.github.com/repositories/`+reposearch)
+            
+          
+          
+            
           }
-        );
-      }
-    );
-  }
+        
+      
+    
+  
 
 
 
