@@ -6,7 +6,7 @@
   
 ## Description
  
-#### This is a web application where the user can search for accounts and repositories on GitHub. You can get this on 
+#### This is a web application where the user can search for accounts and repositories on GitHub. You can get this on https://rehemafaith.github.io/github-search/searchbar
 
 ##  BDD
 
