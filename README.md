@@ -10,3 +10,8 @@
 
 ##  BDD
 
+| Behaviour                | Input                           | Output                      |
+| :---------------------:  | :-------------------------:     | :------------------------:  |
+| place a search bar       | User's search info              | The infomation searched for |
+| place a button           | click action                    | Take user to Github Repos   |
+|Fetch data from GitHub Api| Search input                    | The Information searched in the Api|
