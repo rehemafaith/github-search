@@ -1,0 +1,12 @@
+.jumbotron{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI6wBZ9Rs8sv7-985ClAHPwqD-CITBMPIiSbQ51fLiFGH857zj5A');
+  
+  background-repeat: no-repeat;
+  background-blend-mode: color-dodge ;
+  background-color: aquamarine
+  
+  
+}
+.card{
+  background-color: aquamarine;
+}
