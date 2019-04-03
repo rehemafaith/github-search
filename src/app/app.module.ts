@@ -10,11 +10,15 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
 //import { UserdisplayComponent } from "./userdisplay/UserdisplayComponent";
 import { ResultdisplayComponent } from './resultdisplay/resultdisplay.component';
 import {UserRequestService} from './user-request.service';
+import { NotFoundComponent } from './not-found/not-found.component';
 //import { UserdisplayComponent } from './userdisplay/userdisplay.component'
+import {RoutingModule} from './routing/routing.module'
 
 const routes:Routes=[
   {path:"resultdisplay",component:ResultdisplayComponent},
-  {path:"searchbar",component:SearchbarComponent}
+  {path:"searchbar",component:SearchbarComponent},
+  {path:"",redirectTo:"/searchbar",pathMatch:"full"},
+  {path:'**',component:NotFoundComponent}
 ]
 
 @NgModule({
@@ -23,6 +27,7 @@ const routes:Routes=[
     SearchbarComponent,
     //UserdisplayComponent,
     ResultdisplayComponent,
+    NotFoundComponent,
   //  UserdisplayComponent
   ],
   imports: [
@@ -30,7 +35,8 @@ const routes:Routes=[
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    RoutingModule
   ],
   providers: [UserRequestService],
   bootstrap: [AppComponent]

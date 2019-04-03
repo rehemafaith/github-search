@@ -11,31 +11,7 @@ export class UserRequestService {
     
    }
    
-  //  userRequest(user){
-
-      
-  //   return new Promise ((resolve,reject)=>{
-  //     this.http.get<JSON>(`http://api.github.com/search/users?q=${user}&access-token=${this.apikey}` ).toPromise().then(response=>{
-  //       resolve(response);
-  //     },error=>{
-  //       console.log("We can't find what you are looking for.");
-  //       reject(error);
-  //     }
-  //     );
-  //   });
-  // }
-  // repoRequest(repo){
-      
-  //   return new Promise ((resolve,reject)=>{
-  //     this.http.get<JSON>(`http://api.github.com/search/repositories?q=${repo}&access-token=${this.apikey}` ).toPromise().then(response=>{
-  //       resolve(response);
-  //     },error=>{
-  //       console.log("We can't find what you are looking for.");
-  //       reject(error);
-  //     }
-  //     );
-  //   });
-  // }
+  
    reposLink(reposearch){
 
     
