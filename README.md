@@ -1,8 +1,7 @@
 # GitHub Search
 
-## Author
+## BY : REHEMA FAITH
  
-* Rehema Faith
   
 ## Description
  
@@ -23,11 +22,21 @@
 * Fork the data onto your own personal repository.
 * Clone project
 * Find the live site on the url on the description.
+```
+npm install -g @angular/cli 
 
-
+$ git clone the repository
+$ cd into the repository
+$ npm install
+$ npm start
+```
 ## Technologies Used
  
 * Angular CLI
+
+## Known Bugs
+
+* None 
 
 ## LICENSE
 
